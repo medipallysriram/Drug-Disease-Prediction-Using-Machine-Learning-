@@ -1,0 +1,26 @@
+# Drug Disease Prediction Using Machine Learning
+
+## Description
+This project predicts diseases based on symptoms entered by the user using Machine Learning algorithms. It compares multiple classification models to improve prediction accuracy and provides an easy-to-use Tkinter graphical interface.
+
+## Features
+- Disease prediction based on symptoms
+- Multiple Machine Learning algorithms
+- Tkinter GUI
+- Fast and accurate predictions
+- User-friendly interface
+
+## Technologies Used
+- Python
+- Scikit-learn
+- Pandas
+- NumPy
+- Tkinter
+- Git & GitHub
+
+## Skills
+- Machine Learning
+- Data Preprocessing
+- Classification Algorithms
+- GUI Development
+- Python Programming

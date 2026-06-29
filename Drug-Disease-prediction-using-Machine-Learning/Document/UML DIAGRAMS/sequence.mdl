@@ -1,0 +1,506 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EB02B960105"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5EB02B960107"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5EB02B9601A6"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5EB02B960106"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5EB02B960108"
+	logical_models 	(list unit_reference_list
+	    (object Mechanism @1
+		logical_models 	(list unit_reference_list
+		    (object Object "User"
+			quid       	"5EB02BA20247"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5EB02BF6039B"
+				supplier   	"Application"
+				quidu      	"5EB02BE90006"
+				messages   	(list Messages
+				    (object Message "1.select Symption one"
+					quid       	"5EB02BF6039C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	0)
+				    (object Message "2.select Symption two"
+					quid       	"5EB02C0B0084"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	1)
+				    (object Message "3.select Symption three"
+					quid       	"5EB02C1C02A3"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	2)
+				    (object Message "4.select Symption four"
+					quid       	"5EB02C440020"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	3)
+				    (object Message "5.Select Symption five"
+					quid       	"5EB02C5A01DC"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	4)
+				    (object Message "6.Logistic Regression"
+					quid       	"5EB02C6E03C2"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	5)
+				    (object Message "7.Support Vector Machine"
+					quid       	"5EB02C870293"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	6)
+				    (object Message "8.Drug Prection"
+					quid       	"5EB02C9E01E5"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	""
+					ordinal    	7))))
+			persistence 	"Transient"
+			multi      	FALSE)
+		    (object Object "Application"
+			quid       	"5EB02BE90006"
+			persistence 	"Transient"
+			multi      	FALSE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5EB02B96011E"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@1
+		quid       	"5EB02B9E033D"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	610
+		items      	(list diagram_item_list
+		    (object InterObjView "User" @2
+			location   	(448, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(448, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"User")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5EB02BA20247"
+			width      	300
+			height     	1761
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @3
+			    location   	(448, 368)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @4
+			    location   	(448, 576)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @5
+			    location   	(448, 784)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @6
+			    location   	(448, 960)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @7
+			    location   	(448, 1152)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @8
+			    location   	(448, 1376)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @9
+			    location   	(448, 1584)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @10
+			    location   	(448, 1776)
+			    line_color 	3342489
+			    InterObjView 	@2
+			    height     	120
+			    y_coord    	60
+			    Nested     	FALSE))
+		    (object InterObjView "Application" @11
+			location   	(1744, 224)
+			font       	(object Font
+			    underline  	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@11
+			    location   	(1744, 224)
+			    fill_color 	12058623
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Application")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5EB02BE90006"
+			width      	300
+			height     	1761
+			icon_height 	0
+			icon_width 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @12
+			    location   	(1744, 368)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @13
+			    location   	(1744, 576)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @14
+			    location   	(1744, 784)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @15
+			    location   	(1744, 960)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @16
+			    location   	(1744, 1152)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @17
+			    location   	(1744, 1376)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @18
+			    location   	(1744, 1584)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @19
+			    location   	(1744, 1776)
+			    line_color 	3342489
+			    InterObjView 	@11
+			    height     	60
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "" @20
+			location   	(0, 368)
+			label      	(object SegLabel @21
+			    Parent_View 	@20
+			    location   	(1096, 324)
+			    quidu      	"5EB02BF6039C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"1.select Symption one"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@3
+			Focus_Entry 	@12
+			origin     	(464, 368)
+			terminus   	(1728, 368)
+			ordinal    	0)
+		    (object InterMessView "" @22
+			location   	(0, 576)
+			label      	(object SegLabel @23
+			    Parent_View 	@22
+			    location   	(1096, 532)
+			    quidu      	"5EB02C0B0084"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"2.select Symption two"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@4
+			Focus_Entry 	@13
+			origin     	(464, 576)
+			terminus   	(1728, 576)
+			ordinal    	1)
+		    (object InterMessView "" @24
+			location   	(0, 784)
+			label      	(object SegLabel @25
+			    Parent_View 	@24
+			    location   	(1096, 740)
+			    quidu      	"5EB02C1C02A3"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	416
+			    justify    	0
+			    label      	"3.select Symption three"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@5
+			Focus_Entry 	@14
+			origin     	(464, 784)
+			terminus   	(1728, 784)
+			ordinal    	2)
+		    (object InterMessView "" @26
+			location   	(0, 960)
+			label      	(object SegLabel @27
+			    Parent_View 	@26
+			    location   	(1096, 916)
+			    quidu      	"5EB02C440020"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"4.select Symption four"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@6
+			Focus_Entry 	@15
+			origin     	(464, 960)
+			terminus   	(1728, 960)
+			ordinal    	3)
+		    (object InterMessView "" @28
+			location   	(0, 1152)
+			label      	(object SegLabel @29
+			    Parent_View 	@28
+			    location   	(1096, 1108)
+			    quidu      	"5EB02C5A01DC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"5.Select Symption five"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@7
+			Focus_Entry 	@16
+			origin     	(464, 1152)
+			terminus   	(1728, 1152)
+			ordinal    	4)
+		    (object InterMessView "" @30
+			location   	(0, 1376)
+			label      	(object SegLabel @31
+			    Parent_View 	@30
+			    location   	(1096, 1332)
+			    quidu      	"5EB02C6E03C2"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	375
+			    justify    	0
+			    label      	"6.Logistic Regression"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@8
+			Focus_Entry 	@17
+			origin     	(464, 1376)
+			terminus   	(1728, 1376)
+			ordinal    	5)
+		    (object InterMessView "" @32
+			location   	(0, 1584)
+			label      	(object SegLabel @33
+			    Parent_View 	@32
+			    location   	(1096, 1540)
+			    quidu      	"5EB02C870293"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	453
+			    justify    	0
+			    label      	"7.Support Vector Machine"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@9
+			Focus_Entry 	@18
+			origin     	(464, 1584)
+			terminus   	(1728, 1584)
+			ordinal    	6)
+		    (object InterMessView "" @34
+			location   	(0, 1776)
+			label      	(object SegLabel @35
+			    Parent_View 	@34
+			    location   	(1096, 1732)
+			    quidu      	"5EB02C9E01E5"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	272
+			    justify    	0
+			    label      	"8.Drug Prection"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@11
+			Focus_Src  	@10
+			Focus_Entry 	@19
+			origin     	(464, 1776)
+			terminus   	(1728, 1776)
+			ordinal    	7)))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5EB02B960108"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5EB02B9601A5"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5EB02B960109"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5EB02B96010B"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5EB02B96010A"))
