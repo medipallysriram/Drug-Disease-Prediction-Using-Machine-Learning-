@@ -448,11 +448,6 @@ Feel free to use, modify, and distribute this project for educational and resear
 
 💼 Aspiring AI & Machine Learning Engineer
 
-### Connect with Me
-
-- 💼 LinkedIn: https://www.linkedin.com/in/medipallysriram
-- 💻 GitHub: https://github.com/medipallysriram
-
 ---
 
 # ⭐ Support
